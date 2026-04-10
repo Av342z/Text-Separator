@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+  <title>Text Separator</title>
+</head>
+<body>
+<h1>Text Separator</h1>
+<p>Enter text to separate:</p>
+<input type="text" id="inputText" placeholder="Enter text here">
+<button onclick="separateText()">Separate</button>
+<p>Separated text:</p>
+<div id="output"></div>
+<script>
+function separateText() {
+  const input = document.getElementById('inputText').value;
+  const separated = input.split('').join(' ');
+  document.getElementById('output').innerHTML = separated;
+}
+</script>
+<p> </p>
+<button onclick="copyToClipboard()">Copy to Clipboard</button>
+<script>
+function copyToClipboard() {
+  const output = document.getElementById('output');
+  const range = document.createRange();
+  range.selectNode(output);
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(range);
+  document.execCommand('copy');
+  window.getSelection().removeAllRanges();
+}
+</script>
+</body>
+</html>

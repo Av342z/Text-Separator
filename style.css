@@ -1,0 +1,40 @@
+   p {
+    font-size: 25px;
+
+    }
+  body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 20px;
+
+  }
+  input {
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 15px;
+    color:black;
+    background-color:lightgray;
+    font-size: 20px;
+    border-color: aqua;
+    border-width: 2px;
+    border-style: solid;
+
+  }
+  button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    color:aqua;
+    background-color: #958b8b;
+   hover {
+      background-color: #7a7676;
+    }
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+
+  }
+  #output {
+    margin-top: 22px;
+    font-size: 25px;
+    color: #000000;
+
+  }
